@@ -1,0 +1,49 @@
+@use './colors.scss'as *;
+
+.first-theme {
+    background-color: $main-background-1;
+
+    .theme-text {
+        color: $main-text-1;
+    }
+
+    div.calc-screen {
+        background-color: $screen-background-1;
+    }
+
+    div.calc-body {
+        background-color: $keypad-background-1;
+    }
+}
+
+.second-theme {
+    background-color: $main-background-2;
+
+    .theme-text {
+        color: $main-text-2;
+    }
+
+    div.calc-screen {
+        background-color: $screen-background-2;
+    }
+
+    div.calc-body {
+        background-color: $keypad-background-2;
+    }
+}
+
+.third-theme {
+    background-color: $main-background-3;
+
+    .theme-text {
+        color: $main-text-3;
+    }
+
+    div.calc-screen {
+        background-color: $screen-background-3;
+    }
+
+    div.calc-body {
+        background-color: $keypad-background-3;
+    }
+}

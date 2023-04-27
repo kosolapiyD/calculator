@@ -1,0 +1,28 @@
+body {
+  margin                 : 0;
+  font-family            : 'Quicksand', sans-serif;
+  box-sizing             : border-box;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+li,
+a,
+p,
+code {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* button {
+  border          : none;
+  margin          : 0;
+  padding         : 0;
+  width           : auto;
+  cursor          : pointer;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: none;
+} */

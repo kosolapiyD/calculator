@@ -1,0 +1,25 @@
+.calc-header {
+    padding        : 5px;
+    margin         : 15px;
+    border-radius  : 8px;
+    display        : flex;
+    justify-content: space-between;
+
+    .left-box {
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .right-box {
+        display        : flex;
+        width          : 130px;
+        justify-content: space-between;
+        align-items    : center;
+
+        span {
+            font-weight: bold;
+            font-size  : 10px;
+        }
+    }
+}
