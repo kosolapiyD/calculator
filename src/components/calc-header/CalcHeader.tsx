@@ -19,18 +19,25 @@ const CalcHeader = () => {
   };
 
   return (
-    <div className='calc-header'>
-      <div className='left-box'>
-        <span className='theme-text'>calc</span>
-      </div>
-      <div className='right-box'>
-        <span className='theme-text'>THEME</span>
-        <div onClick={(e) => handleThemeSwitchClick(e)}>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-        </div>
-      </div>
+    // <div className='calc-header'>
+    //   <div className='left-box'>
+    //     <span className='theme-text'>calc</span>
+    //   </div>
+    //   <div className='right-box'>
+    //     <span className='theme-text'>THEME</span>
+    //     <div onClick={(e) => handleThemeSwitchClick(e)}>
+    //       <button>1</button>
+    //       <button>2</button>
+    //       <button>3</button>
+    //     </div>
+    //   </div>
+    // </div>
+    <div className='switch'>
+      <input name='switch' id='1' type='radio' />
+
+      <input name='switch' id='2' type='radio' />
+
+      <input name='switch' id='3' type='radio' />
     </div>
   );
 };
