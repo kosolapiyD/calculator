@@ -30,6 +30,30 @@
 
             .switch-buttons {
                 display: flex;
+
+                .switch-radio-item .radio-input {}
+
+                .switch-radio-item .radio-input:hover {}
+
+                .switch-radio-item .radio-input:before {
+                    content: '';
+
+
+
+                }
+
+                .switch-radio-item .radio-input:checked {
+                    position    : relative;
+                    padding-left: 28px;
+                    cursor      : pointer;
+                    line-height : 20px;
+                    display     : inline-block;
+                    color       : #666;
+                }
+
+                .switch-radio-item .radio-input:checked:before {
+                    background: red;
+                }
             }
         }
     }

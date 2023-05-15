@@ -49,6 +49,7 @@ const CalcHeader = () => {
             {buttonsArr.map((value) => (
               <div className='switch-radio-item theme-text'>
                 <input
+                  className='radio-input'
                   name='switch'
                   id={value}
                   type='radio'
