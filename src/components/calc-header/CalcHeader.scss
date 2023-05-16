@@ -1,3 +1,5 @@
+@import '../../styles/reset';
+
 .calc-header {
     padding        : 5px;
     margin         : 15px;
@@ -26,33 +28,58 @@
             .switch-labels {
                 display        : flex;
                 justify-content: space-around;
+                font-size      : 12px;
+                font-weight    : bold;
+                padding-bottom : 2px;
             }
 
             .switch-buttons {
-                display: flex;
+                display      : flex;
+                border-radius: 18px;
 
-                .switch-radio-item .radio-input {}
+                .switch-radio-item {
 
-                .switch-radio-item .radio-input:hover {}
+                    input.radio-input:checked,
+                    input.radio-input:not(:checked) {
+                        position: relative;
+                        cursor  : pointer;
+                    }
 
-                .switch-radio-item .radio-input:before {
-                    content: '';
+                    input.radio-input:checked:before,
+                    input.radio-input:not(:checked):before {
+                        content      : '';
+                        position     : absolute;
+                        left         : -3px;
+                        top          : -3px;
+                        width        : 18px;
+                        height       : 18px;
+                        border-radius: 100%;
+                    }
 
+                    input.radio-input:checked:after,
+                    input.radio-input:not(:checked):after {
+                        content           : '';
+                        width             : 14px;
+                        height            : 14px;
+                        position          : absolute;
+                        top               : 0;
+                        left              : -1px;
+                        border-radius     : 100%;
+                        -webkit-transition: all 0.2s ease;
+                        transition        : all 0.2s ease;
+                    }
 
+                    input.radio-input:not(:checked):after {
+                        opacity          : 0;
+                        -webkit-transform: scale(0);
+                        transform        : scale(0);
+                    }
 
-                }
-
-                .switch-radio-item .radio-input:checked {
-                    position    : relative;
-                    padding-left: 28px;
-                    cursor      : pointer;
-                    line-height : 20px;
-                    display     : inline-block;
-                    color       : #666;
-                }
-
-                .switch-radio-item .radio-input:checked:before {
-                    background: red;
+                    input.radio-input:checked:after {
+                        opacity          : 1;
+                        -webkit-transform: scale(1);
+                        transform        : scale(1);
+                    }
                 }
             }
         }

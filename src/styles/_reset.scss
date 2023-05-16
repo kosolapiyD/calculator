@@ -11,8 +11,16 @@
         background-color: $screen-background-1;
     }
 
-    div.calc-body {
-        background-color: $keypad-background-1;
+    div.calc-body,
+    .switch-buttons,
+    input.radio-input:checked:before,
+    input.radio-input:not(:checked):before {
+        background-color: $keypad-and-toggle-background-1;
+    }
+
+    input.radio-input:checked:after,
+    input.radio-input:not(:checked):after {
+        background-color: $key-red-background-and-toggle-1;
     }
 }
 
@@ -27,8 +35,16 @@
         background-color: $screen-background-2;
     }
 
-    div.calc-body {
-        background-color: $keypad-background-2;
+    div.calc-body,
+    .switch-buttons,
+    input.radio-input:checked:before,
+    input.radio-input:not(:checked):before {
+        background-color: $keypad-and-toggle-background-2;
+    }
+
+    input.radio-input:checked:after,
+    input.radio-input:not(:checked):after {
+        background-color: $key-orange-background-and-toggle-2;
     }
 }
 
@@ -43,7 +59,15 @@
         background-color: $screen-background-3;
     }
 
-    div.calc-body {
-        background-color: $keypad-background-3;
+    div.calc-body,
+    .switch-buttons,
+    input.radio-input:checked:before,
+    input.radio-input:not(:checked):before {
+        background-color: $keypad-and-toggle-background-3;
+    }
+
+    input.radio-input:checked:after,
+    input.radio-input:not(:checked):after {
+        background-color: $key-pure-cyan-background-and-toggle-3;
     }
 }
