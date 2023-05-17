@@ -119,6 +119,7 @@ const App = () => {
     return (
       <button
         key={sign}
+        value={sign}
         onClick={() => handleBtnClick(sign)}
         className={`${
           sign === 'RESET' ? 'span-two' : '' || sign === '=' ? 'span-two' : ''

@@ -22,6 +22,36 @@
     input.radio-input:not(:checked):after {
         background-color: $key-red-background-and-toggle-1;
     }
+
+    button {
+        background-color: $key-light-grayish-orange-background-1;
+        box-shadow      : 0 4px $key-grayish-orange-shadow-1;
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+
+    button[value="RESET"],
+    button[value="DEL"] {
+        background-color: $key-dark-blue-background-1;
+        box-shadow      : 0 4px $key-dark-blue-shadow-1;
+        color           : #fff;
+
+        &:hover {
+            background-color: $key-dark-blue-background-hover-1;
+        }
+    }
+
+    button[value="="] {
+        background-color: $key-red-background-and-toggle-1;
+        box-shadow      : 0 4px $key-dark-red-shadow-1;
+        color           : #fff;
+
+        &:hover {
+            background-color: $key-red-background-hover-1;
+        }
+    }
 }
 
 .second-theme {

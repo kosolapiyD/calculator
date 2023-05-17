@@ -50,9 +50,11 @@
                 margin       : 8px;
                 font-size    : 26px;
                 font-weight  : bold;
+                border       : none;
 
-                &:hover {
-                    background: #ccc;
+                &[value="RESET"],
+                &[value="DEL"] {
+                    font-size: 22px;
                 }
             }
         }
