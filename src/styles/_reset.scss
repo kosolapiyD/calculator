@@ -76,6 +76,36 @@
     input.radio-input:not(:checked):after {
         background-color: $key-orange-background-and-toggle-2;
     }
+
+    button {
+        background-color: $key-light-grayish-orange-background-1;
+        box-shadow      : 0 4px $key-grayish-orange-shadow-1;
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+
+    button[value="RESET"],
+    button[value="DEL"] {
+        background-color: $key-dark-moderate-cyan-background-2;
+        box-shadow      : 0 4px $key-very-dark-cyan-shadow-2;
+        color           : #fff;
+
+        &:hover {
+            background-color: $key-dark-moderate-cyan-background-hover-2;
+        }
+    }
+
+    button[value="="] {
+        background-color: $key-orange-background-and-toggle-2;
+        box-shadow      : 0 4px $key-dark-orange-shadow-2;
+        color           : #fff;
+
+        &:hover {
+            background-color: $key-red-background-hover-1;
+        }
+    }
 }
 
 .third-theme {
@@ -99,5 +129,36 @@
     input.radio-input:checked:after,
     input.radio-input:not(:checked):after {
         background-color: $key-pure-cyan-background-and-toggle-3;
+    }
+
+    button {
+        background-color: $key-very-dark-violet-background-3;
+        box-shadow      : 0 4px $key-dark-magenta-shadow-3;
+        color           : $main-text-3;
+
+        &:hover {
+            background-color: $key-dark-violet-background-hover-3;
+        }
+    }
+
+    button[value="RESET"],
+    button[value="DEL"] {
+        background-color: $key-dark-violet-background-3;
+        box-shadow      : 0 4px $key-vivid-magenta-shadow-3;
+        color           : #fff;
+
+        &:hover {
+            background-color: $key-dark-violet-background-hover-3;
+        }
+    }
+
+    button[value="="] {
+        background-color: $key-pure-cyan-background-and-toggle-3;
+        box-shadow      : 0 4px $key-soft-cyan-shadow-3;
+        color           : #000;
+
+        &:hover {
+            background-color: $key-pure-cyan-background-and-toggle-hover-3;
+        }
     }
 }

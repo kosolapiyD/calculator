@@ -8,8 +8,12 @@
     justify-content: space-between;
 
     .left-box {
+        display: flex;
+        align-items: center;
+
         span {
             font-weight: bold;
+            padding-top: 15px;
         }
     }
 
@@ -22,6 +26,7 @@
         span {
             font-weight: bold;
             font-size  : 10px;
+            padding-top: 19px;
         }
 
         .switch {
